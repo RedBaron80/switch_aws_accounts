@@ -31,13 +31,9 @@ for instance in instances:
     instances_ips = instances_ips + instance.private_ip_address + ','
 instances_ips = instances_ips[:-1] #remove last separator
 
-#Adding profile colours and env variables
+#Adding profile colours and env variables. iterm profile must exist
 profile = ''
-if args.tag == 'connectapi':
-        profile = ' -p Green'
-elif args.tag == 'connectqueue':
-        profile = ' -p White'
-elif args.tagValue == 'prod':
+if args.tag == 'prod':
         profile = ' -p Green'
 
 # Executing the command
