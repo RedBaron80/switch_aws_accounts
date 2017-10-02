@@ -31,11 +31,6 @@ for instance in instances:
     instances_ips = instances_ips + instance.private_ip_address + ','
 instances_ips = instances_ips[:-1] #remove last separator
 
-#Adding profile colours and env variables. iterm profile must exist
-profile = ''
-if args.tag == 'prod':
-        profile = ' -p Green'
-
 # Executing the command
-print("i2cssh -b -l "+ args.username +" -m " + instances_ips + profile)
-os.system("i2cssh -b -l "+ args.username +" -m " + instances_ips + profile)
+print("i2cssh -b -l "+ args.username +" -m " + instances_ips)
+os.system("i2cssh -b -l "+ args.username +" -m " + instances_ips)
