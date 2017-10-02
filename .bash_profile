@@ -1,5 +1,5 @@
 # Shell Functions
-aws-env() {
+switch() {
   if [[ "$1" == "prodro" ]]; then
     /usr/bin/ssh-add -D
     export AWS_ACCESS_KEY_ID=''
@@ -21,6 +21,6 @@ aws-env() {
     echo "AWS Dev Environment Credentials Set"
     /usr/bin/ssh-add ~/.ssh/keys/development.pem
   else
-    echo "Usage: aws-account (prod|test|dev)"
+    echo "Usage: aws-account (prodro|prod|dev)"
   fi
 }
