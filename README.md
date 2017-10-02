@@ -17,7 +17,6 @@
         [develop]
         aws_access_key_id = xxxxx
         aws_secret_access_key = yyyy
-        
         [production]
         aws_access_key_id = xxxxx
         aws_secret_access_key = zzzzz
