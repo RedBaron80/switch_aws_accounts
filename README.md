@@ -12,5 +12,5 @@
   <li>Feel free to make an alias for the connect.py file</li>
 </ul>
 <h2>Usage</h2>
-  <p> $ switch develop </p>
-  <p> $ python connect.py <tagname> <tag> <ssh username> </p>
+  <pre> $ switch develop </pre>
+  <pre> $ python connect.py TAG_NAME TAG SSH_USERNAME</pre>
