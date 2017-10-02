@@ -1,6 +1,6 @@
 # switch_aws_accounts
-<h2>Introduction<h1>
-  <p> This is a simple set up for Mac OS</p>
+<h2>Introduction</h2>
+  <p> This is a simple set up for Mac OS. It allows to connect to AWS EC2 instances using tags, all at the same time and broadcasting the commands. Moreover, several AWS accounts are supported. For example, you can have a develop account and a production account.</p>
 <h2>Requirements</h2>
 <ul>
   <li><strong>i2cssh</strong> gem install i2cssh</li>
